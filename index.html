@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <!--
+    * Copyright (c) 2018 Charles W. Roberts
+    * All Rights Reserved
+    *
+    * No portion of this code may be copied or modified without the
+    * prior written permission of Charles Roberts.
+    *
+    -->
+    <head>
+        <meta charset="UTF-8">
+        <meta author="Charles Roberts">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <!-- Local style sheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Train Homework</title>
+        
+   <title></title>
+
+    </head>
+
+
+<body>
+
+<div class="container">
+<div class = "row">
+<div class="col-lg-12">
+     <!-- Jumbotron Title -->
+    <div class="jumbotron">
+       	<h1 class="text-center">Anytime is Train Time</h1>
+       	<h3 class="text-center">Choo Choo.  Chee Chee.</h3>
+    </div>
+
+
+<div class="panel panel-default">
+           <div class="panel-heading">
+             <h3 class="panel-title">Current Train Schedule</h3>
+           </div>
+           <div class="panel-body">
+ 
+        
+            <table class="table" id="train-table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Train Name</th>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Frequency (min)</th>
+                  <th scope="col">Next Arrival</th>
+                  <th scope="col">Minutes Away</th>
+               
+                </tr>
+              </thead>
+              <tbody id="train-body">
+              	
+              </tbody>
+              
+            </table>
+             <button class="btn btn-primary" id="update-btn">Update Schedule</button>
+        </div>
+    </div>
+<br>
+
+     <!-- Make Your Bid -->
+    
+     <div class="row">
+       <div class="col-lg-12">
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <h3 class="panel-title">Add Train</h3>
+           </div>
+           <div class="panel-body">
+             
+              <div class="form-group">
+                 <label for="train-name">Train Name</label>
+                 <input class="form-group" id="train-name" type="text">
+               </div>
+
+               <div class="form-group">
+                 <label for="destination">Destination</label>
+                 <input class="form-group" id="destination" type="text">
+               </div>
+               
+                <div class="form-group">
+                 <label for="frequency">Frequency</label>
+                 <input class="form-group" id="frequency" type='number'>
+               </div>
+              
+             <div class="form-group">
+                 <label for="next-arrival">"First Train Time"</label>
+                 <input class="form-group" placeholder="mm/dd/yyyy hr:min in 24 Hour Format" id="first-time" type='text'>
+               </div>
+              
+               <button class="btn btn-primary" id="submit-train">
+               Submit</button>
+             
+           </div>
+         </div>
+       </div>
+     </div>
+</div>
+
+
+
+<script src="assets/javascript/Train.js"></script>
+<script src="assets/javascript/logic.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+
+</body>
+</html>
